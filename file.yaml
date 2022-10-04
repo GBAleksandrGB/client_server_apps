@@ -1,8 +1,0 @@
-dict:
-  price1: 13€
-  price2: 5€
-int: 42
-list:
-- LITE
-- null
-- true
