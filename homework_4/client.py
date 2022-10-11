@@ -39,7 +39,10 @@ def process_ans(message):
 
 
 def main():
-    '''Загружаем параметы коммандной строки'''
+    '''
+    Загружаем параметы коммандной строки
+    :return:
+    '''
     try:
         server_address = sys.argv[1]
         server_port = int(sys.argv[2])
@@ -49,7 +52,7 @@ def main():
         server_address = DEFAULT_IP_ADDRESS
         server_port = DEFAULT_PORT
     except ValueError:
-        print('В качестве порта может быть указано только число в диапазоне от 1024 до 65535.')
+        print('В качастве порта может быть указано только число в диапазоне от 1024 до 65535.')
         sys.exit(1)
 
     # Инициализация сокета и обмен
